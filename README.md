@@ -59,7 +59,7 @@ Satellite vegetation - Normalized difference vegetation index (NDVI) - NOAA's CD
     ndvi_ne – Pixel northeast of city centroid
     ndvi_nw – Pixel northwest of city centroid
 
-## Assignment Questions
+## Assignment 1 Questions
 
 1. Load the file 'dengue_features_train.csv', display the top 3 rows and observe the data. Then programmatically define the column names to make the following changes. 
 
@@ -96,3 +96,24 @@ e). Read the relationship between mean and standard deviation from the link give
 4. Optional Question (no credit, or no extra credit): Find and remove the outliers to bring the mean and standard deviation closer to each other.
 
 5. Create a temp data frame by grouping the total_cases by weekofyear and draw a histogram of total_cases and provide insights based on the distribution. 
+
+## Assignment 2 Questions
+
+Use the merged data frame from Assignment 1 for this assignment
+This Assignment focuses on data preprocessing and model building. Continue with the datasets loaded in Assignment 1 (or reload with same steps and create merged data frame) and Make a stratified 80-20 split based on target to ensure there are no biases in the dataset. Predict the "total_cases" using a stochastic gradient descent regressor. Calculate the Root Mean Square Error. Also, plot Learning Curve for the model. Provide your intepretations based on these metrics.
+
+<ul>
+    <li>Import the required libraries</li>
+    <li>Make an 80-20 stratified split based on the target data</li>
+    <li>Preprocess the data (Encode the  categorical features and Standardize the numerical features)</li>
+    <li>Build a stochastic gradient descent regressor, train the model </li>
+    <li>Evaluate your model based on applicable metrics. Show the metric(s) you chose and why you chose this(these) metrics.</li>
+    <li>List the hyper-parameters that can be tuned in SGD. Show the code along with comments on the parameter value chosen (use class presentation, discussion notes, some online reading) and why this value was chosen. Show the improvement you achieved in model accuracy.  </li>
+    <li>Plot Learning curve and provide insights</li>
+    <li>Create a submission file which has predictions for both cities in the submission format prescribed by the contest at the link https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/data/</li>
+    <li>Optional: Submit your predictions to the contest. You will get a submission score. Update it here. As you improve your model in next assignments, you can try to improve this score.</li>
+</ul>
+
+Submit the following for this assignment: 
+1. .ipynb and .html formats of Jupyter notebook code with outputs and 
+2. the submission_format.csv with your predictions
